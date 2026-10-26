@@ -1,0 +1,67 @@
+/* Textos */
+h1, h2, h3 {
+    font-family: 'Bodoni Moda', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+/* Home + busqueda */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-image: url(/assets/img/hotel-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 100px);
+}
+#home > form{
+    position: absolute;
+    bottom: 170px;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--vFlojo);
+}
+
+#home > form > .buscar{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+.buscar label, .buscar input{
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+.buscar input{
+    border: 1px solid var(--azul);
+}
+.buscar label{
+    color: var(--onyx);
+}
+
+#home > form > button {
+    width: 100%;
+    border-radius: 0;
+    border: 1px;
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 8px;
+}
+/* Main */

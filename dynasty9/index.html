@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynasty 9</title>
-    <link rel="icon" href="/dynasty9/assets/img/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="/dynasty9/assets/css/header.css">
-    <link rel="stylesheet" href="/dynasty9/assets/css/index.css">
-    <link rel="stylesheet" href="/dynasty9/assets/css/footer.css">
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
 </head>
 <body>
     <header>
-        <img src="/dynasty9/assets/img/logo-monograma-claro.svg" alt="Dynasty 9 Logo" class="logo">
-        <img src="/dynasty9/assets/img/menu.svg" alt="menu" class="menu">
+        <img src="/assets/img/logo-monograma-claro.svg" alt="Dynasty 9 Logo" class="logo">
+        <img src="/assets/img/menu.svg" alt="menu" class="menu">
         <div class="lMenu">
             <p>€</p>
             <p>Idioma</p>
@@ -21,21 +21,33 @@
         </div>
     </header>
     <main>
-        <section>
+        <section id="home">
             <h1>El Viaje Ideal</h1>
             <form action="" method="get">
-                <input type="text" id="destino" name="destino" value="Menorca" required>
-                <input type="number" id="nPersonas" name="nPersonas" min="1" value="2" required>
-                <input type="date" id="entrada" name="entrada" required>
-                <input type="date" id="salida" name="salida" required>
-                <button type="submit">Busar</button>
+                <div class="buscar">
+                    <label for="">Destino</label>
+                    <input type="text" id="destino" name="destino" value="Menorca" required>
+                </div>
+                <div class="buscar">
+                    <label for="">Personas</label>
+                    <input type="number" id="nPersonas" name="nPersonas" min="1" value="2" required>
+                </div>
+                <div class="buscar">
+                    <label for="">Entrada</label>
+                    <input type="date" id="entrada" name="entrada" required>
+                </div>
+                <div class="buscar">
+                    <label for="">Salida</label>
+                    <input type="date" id="salida" name="salida" required>
+                </div>
+                <button type="submit">Buscar</button>
             </form> 
         </section>
-        <h2>Encuntra tu proxima estancia</h2>
+        <h2>Encuentra tu proxima estancia</h2>
         <section>
             <h3>Ofertas</h3>
             <article>
-                <img src="assets/img/hotel.png" alt="hotel">
+                <img src="/assets/img/hotel.png" alt="hotel">
                 <h4>Hotel PRIXY</h4>
                 <p>Exelente 9.5</p>
                 <p>90 € / Noche</p>
@@ -43,7 +55,7 @@
                 <button>Reserva</button>
             </article>
             <article>
-                <img src="assets/img/hotel.png" alt="hotel">
+                <img src="/assets/img/hotel.png" alt="hotel">
                 <h4>Hotel PRIXY</h4>
                 <p>Exelente 9.5</p>
                 <p>90 € / Noche</p>
@@ -51,7 +63,7 @@
                 <button>Reserva</button>
             </article>
             <article>
-                <img src="assets/img/hotel.png" alt="hotel">
+                <img src="/assets/img/hotel.png" alt="hotel">
                 <h4>Hotel PRIXY</h4>
                 <p>Exelente 9.5</p>
                 <p>90 € / Noche</p>
