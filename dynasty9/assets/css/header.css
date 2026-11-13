@@ -9,7 +9,6 @@
     src: url('../fonts/Manrope/static/Manrope-Regular.ttf');
 }
 
-
 /* COLORS */
 /* v = verde */
 :root {
@@ -29,7 +28,9 @@
 }
 
 header {
+    position: relative;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 20px;
     background-color: var(--vsalvia);
@@ -41,10 +42,42 @@ header {
     height: auto;
 }
 
-.lMenu {
-    display: none;
+.menu {
+    display: block;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
 }
 
+.menu img {
+    display: block;
+    width: 26px;
+    height: 26px;
+}
+
+.menu.activo {
+    opacity: 0.5;
+}
+
+.lMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--vsalvia);
+}
+
+.lMenu a {
+    padding: 14px 20px;
+    color: var(--onyx);
+}
+
+.lMenu.abierto {
+    display: flex;
+}
 
 @media (min-width: 600px) {
 
@@ -53,8 +86,15 @@ header {
     }
 
     .lMenu {
+        position: static;
         display: flex;
+        flex-direction: row;
         gap: 40px;
         padding: 20px;
+        background-color: transparent;
+    }
+
+    .lMenu a {
+        padding: 0;
     }
 }

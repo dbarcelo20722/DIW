@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,46 +8,62 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <script src="assets/js/menu.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="assets/img/logo-monograma-claro.svg" alt="Dynasty 9 Logo" class="logo">
-        <img src="assets/img/menu.svg" alt="menu" class="menu">
-        <div class="lMenu">
-            <p>€</p>
-            <p>Idioma</p>
-            <p>Sing Up</p>
-            <p>Login</p>
-        </div>
+        <a href="#home"><img src="assets/img/logo-monograma-claro.svg" alt="Dynasty 9 Logo" class="logo"></a>
+        <button type="button" class="menu"><img src="assets/img/menu.svg" alt="menu"></button>
+        <nav class="lMenu">
+            <a href="#">€</a>
+            <a href="#">Idioma</a>
+            <a href="#">Sing Up</a>
+            <a href="#">Login</a>
+        </nav>
     </header>
     <main>
         <section id="home">
             <h1>El Viaje Ideal</h1>
             <form action="" method="get">
                 <div class="buscar">
-                    <label for="">Destino</label>
+                    <label for="destino">Destino</label>
                     <input type="text" id="destino" name="destino" value="Menorca" required>
                 </div>
                 <div class="buscar">
-                    <label for="">Personas</label>
-                    <input type="number" id="nPersonas" name="nPersonas" min="1" value="2" required>
+                    <label for="adultos">Personas</label>
+                    <div class="personas">
+                        <span><input type="number" id="adultos" name="adultos" min="1" value="2" required> A</span>
+                        <span><input type="number" id="ninos" name="ninos" min="0" value="0" required> N</span>
+                        <span><input type="number" id="bebes" name="bebes" min="0" value="0" required> B</span>
+                    </div>
                 </div>
                 <div class="buscar">
-                    <label for="">Entrada</label>
+                    <label for="entrada">Entrada</label>
                     <input type="date" id="entrada" name="entrada" required>
                 </div>
                 <div class="buscar">
-                    <label for="">Salida</label>
+                    <label for="salida">Salida</label>
                     <input type="date" id="salida" name="salida" required>
                 </div>
                 <button type="submit">Buscar</button>
-            </form> 
+            </form>
         </section>
-        <h2>Encuentra tu proxima estancia</h2>
+        <section id="estancias">
+            <h2>Encuentra tu próxima estancia</h2>
+            <article class="destino menorca">
+                <h4>Menorca</h4>
+            </article>
+            <article class="destino menorca centro">
+                <h4>Mallorca</h4>
+            </article>
+            <article class="destino menorca izquierda">
+                <h4>Ibiza</h4>
+            </article>
+        </section>
         <section id="ofertas">
             <h3>Ofertas</h3>
             <article>
-                <img src="assets/img/hotel.png" alt="hotel" class="hoteles">
+                <div class="foto hotel1"></div>
                 <h4>Hotel PRIXY</h4>
                 <p>Exelente 9.5</p>
                 <p>Menorca</p>
@@ -55,7 +71,7 @@
                 <button>Reserva</button>
             </article>
             <article>
-                <img src="assets/img/hotel.png" alt="hotel" class="hoteles">
+                <div class="foto hotel2"></div>
                 <h4>Hotel PRIXY</h4>
                 <p>Exelente 9.5</p>
                 <p>Menorca</p>
@@ -63,29 +79,50 @@
                 <button>Reserva</button>
             </article>
             <article>
-                <img src="assets/img/hotel.png" alt="hotel" class="hoteles">
+                <div class="foto hotel1"></div>
                 <h4>Hotel PRIXY</h4>
                 <p>Exelente 9.5</p>
                 <p>Menorca</p>
                 <p>90 € / Noche</p>
                 <button>Reserva</button>
+            </article>
+        </section>
+        <section id="unicos">
+            <h3>Destinos unicos</h3>
+            <article class="destino selva">
+                <h4>Selva Negra</h4>
+            </article>
+            <article class="destino alpes">
+                <h4>Alpes</h4>
+            </article>
+            <article class="destino menorca">
+                <h4>Costa Brava</h4>
             </article>
         </section>
         <section id="moda">
             <h3>Destinos de moda</h3>
-            <article>
-                <h4>Menorca</h4>
-            </article>
-            <article>
+            <article class="destino hotel2">
                 <h4>Madrid</h4>
             </article>
-            <article>
-                <h4>Mallorca</h4>
+            <article class="destino menorca">
+                <h4>Lagos</h4>
+            </article>
+            <article class="destino menorca">
+                <h4>Oporto</h4>
+            </article>
+            <article class="destino menorca">
+                <h4>Tenerife</h4>
+            </article>
+            <article class="destino selva">
+                <h4>Pirineos</h4>
+            </article>
+            <article class="destino alpes">
+                <h4>Granada</h4>
             </article>
         </section>
     </main>
     <footer>
-        <a href="#"><img src="assets/img/logo-claro.svg" alt="Dynasty 9 Logo" class="logo2"></a>
+        <a href="#home"><img src="assets/img/logo-claro.svg" alt="Dynasty 9 Logo" class="logo2"></a>
         <a href="#">Sobre Nosotros</a>
         <a href="#">Afiliacion</a>
         <a href="#">Soporte</a>
