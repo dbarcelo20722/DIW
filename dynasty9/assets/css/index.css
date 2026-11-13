@@ -4,10 +4,7 @@ h1{
     font-weight: 1500;
 }
 
-h1 {
-    font-size: 50px;
-    text-align: center;
-}
+
 
 a {
     text-decoration: none;
@@ -33,6 +30,11 @@ a {
     padding: 10px;
     border-radius: 15px;
     background-color: var(--vFlojo);
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 100px;
 }
 
 #home > form > .buscar {
@@ -149,8 +151,9 @@ main h3 {
     }
     h1 {
         padding-top: 100px;
-        font-size: 100px;
+        font-size: 80px;
     }
+    
     main > h2 {
         padding-top: 100px;
         font-size: 70px;
@@ -161,6 +164,43 @@ main h3 {
     }
     h4 {
         font-size: 30px;
+    }
+
+    
+
+    #ofertas{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    #ofertas > h3 {
+        width: 100%;
+        text-align: center;
+    }
+    #ofertas > article {
+        width: 30%;
+    }
+
+    #moda{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    #moda > h3 {
+        width: 100%;
+        text-align: center;
+    }
+    #moda > article {
+        width: 30%;
+    }
+
+}
+@media (min-width: 1000px) {
+    h1 {
+        padding-top: 100px;
+        font-size: 100px;
     }
 
     #home > form {
@@ -206,5 +246,4 @@ main h3 {
         font-size: 15px;
         margin: 20px;
     }
-
 }

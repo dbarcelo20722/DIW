@@ -2,6 +2,38 @@ footer {
     background-color: var(--vsalvia);
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    gap: 5px;
+    align-items: center;
+    gap: 12px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer > a {
+    color: var(--onyx);
+    font-size: 16px;
+}
+
+footer > a:first-of-type {
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+footer .logo2 {
+    display: block;
+    width: 110px;
+    height: auto;
+}
+
+@media (min-width: 850px) {
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 40px;
+        padding: 40px 60px;
+    }
+
+    footer .logo2 {
+        width: 70px;
+    }
 }
